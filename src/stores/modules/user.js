@@ -25,8 +25,9 @@ export const useUserStore = defineStore({
         expires: 7,
       })
       const res = await login(params)
-      setToken(res.data.token)
-      this.token = res.data.token
+      console.log({res})
+      setToken(res.token)
+      this.token = res.token
       return res
     },
 

@@ -38,7 +38,7 @@ export default defineComponent({
     // };
 
     const loginHandle = async () => {
-      const res = await userStore.Login({ userName: 'zs', password: 'zs123.' }, true);
+      const res = await userStore.Login({ username: 'lisi', password: 'lisi123' }, true);
       console.log("res", res);
     }
 
